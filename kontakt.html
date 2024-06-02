@@ -1,3 +1,31 @@
+<!--
+Ovo je HTML dokument koji predstavlja kontakt stranicu. Stranica sadrži formu za slanje poruke, kao i navigacioni meni sa linkovima ka drugim delovima sajta.
+
+Elementi stranice:
+- <header>: Zaglavlje stranice sa pozadinom i formom za slanje poruke.
+- <nav>: Navigacioni meni sa linkovima ka drugim delovima sajta.
+- <form>: Forma za slanje poruke sa poljima za unos imena, broja telefona, email adrese i poruke.
+- Ostali HTML elementi: Linkovi ka eksternim CSS i JavaScript fajlovima.
+
+Fajlovi:
+- /assets/bootstrap/css/bootstrap.min.css: CSS fajl koji sadrži stilove za Bootstrap framework.
+- /assets/fonts/font-awesome.min.css: CSS fajl koji sadrži stilove za Font Awesome ikonice.
+- /assets/css/aos.min.css: CSS fajl koji sadrži stilove za animacije.
+- /assets/css/animate.min.css: CSS fajl koji sadrži stilove za animacije.
+- /assets/css/Beautiful-Contact-from-animated.css: CSS fajl koji sadrži stilove za animiranu formu za slanje poruke.
+- /assets/css/Contact-Form-by-Moorcam.css: CSS fajl koji sadrži stilove za formu za slanje poruke.
+- /assets/css/Pricing-Tables-pricing-table.css: CSS fajl koji sadrži stilove za cenovnike.
+- /assets/css/Pricing-Tables.css: CSS fajl koji sadrži stilove za cenovnike.
+- /assets/img/bg-pattern.png: Slika koja se koristi kao pozadina na stranici.
+- /assets/js/aos.min.js: JavaScript fajl koji sadrži funkcionalnosti za animacije.
+- /assets/js/bs-init.js: JavaScript fajl koji sadrži inicijalizaciju Bootstrap komponenti.
+- /assets/js/Beautiful-Contact-from-animated-script.js: JavaScript fajl koji sadrži skriptu za animiranu formu za slanje poruke.
+- /assets/js/new-age.js: JavaScript fajl koji sadrži funkcionalnosti za glavni meni.
+- /assets/js/Pricing-Tables-pricing-tables.js: JavaScript fajl koji sadrži funkcionalnosti za cenovnike.
+- /assets/js/Pricing-Tables-wow.js: JavaScript fajl koji sadrži funkcionalnosti za cenovnike.
+
+Autor: Stefan Topciov
+-->
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
 
@@ -23,20 +51,20 @@
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
     <header class="masthead" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);"> <!-- Pozadina -->
         <section class="shadow contact-clean" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);">
-            <form class="bg-light border rounded border-secondary shadow-lg" data-aos="zoom-out" data-aos-duration="1000" method="post" style="background: rgb(248,248,249);">
-                <h2 class="text-center">Kontatiraj me</h2>
-                <div class="form-group mb-3"><input class="form-control" type="text" name="name" placeholder="Ime"></div>
-                <div class="form-group mb-3"><input class="form-control" type="text" name="phone" placeholder="Broj telefona" inputmode="tel"></div>
-                <div class="form-group mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group mb-3"><textarea class="form-control" name="message" placeholder="Poruka" rows="14"></textarea></div>
-                <div class="form-group mb-3"><button class="btn btn-primary" type="submit">posalji</button></div>
+            <form class="bg-light border rounded border-secondary shadow-lg" data-aos="zoom-out" data-aos-duration="1000" method="post" style="background: rgb(248,248,249);"> <!-- Forma za slanje poruke -->
+                <h2 class="text-center">Kontatiraj me</h2> <!-- Naslov forme -->
+                <div class="form-group mb-3"><input class="form-control" type="text" name="name" placeholder="Ime"></div> <!-- Polje za unos imena -->
+                <div class="form-group mb-3"><input class="form-control" type="text" name="phone" placeholder="Broj telefona" inputmode="tel"></div> <!-- Polje za unos broja telefona -->
+                <div class="form-group mb-3"><input class="form-control" type="email" name="email" placeholder="Email"></div> <!-- Polje za unos email adrese -->
+                <div class="form-group mb-3"><textarea class="form-control" name="message" placeholder="Poruka" rows="14"></textarea></div> <!-- Polje za unos poruke -->
+                <div class="form-group mb-3"><button class="btn btn-primary" type="submit">posalji</button></div> <!-- Dugme za slanje poruke -->
             </form>
         </section>
     </header>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 53px;">Stefan Topciov</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav"> <!-- Navbar -->
+        <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 53px;">Stefan Topciov</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button> <!-- Dugme za otvaranje menija -->
+            <div class="collapse navbar-collapse" id="navbarResponsive"> <!-- Meni -->
+                <ul class="navbar-nav ms-auto"> <!-- Lista stavki menija -->
                     <li class="nav-item"><a class="nav-link dugmici" data-bss-hover-animate="jello" href="galerija.html">Galerija</a></li>
                     <li class="nav-item"><a class="nav-link dugmici" data-bss-hover-animate="jello" href="mailto:stopciov@gmail.com">e-mail</a></li>
                     <li class="nav-item"><a class="nav-link dugmici" data-bss-hover-animate="jello" href="kontakt.html">kontakt forma</a></li>
@@ -44,13 +72,13 @@
             </div>
         </div>
     </nav>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script>
-    <script src="assets/js/new-age.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!-- Ukljucuje bootstrap js -->
+    <script src="assets/js/aos.min.js"></script>   <!-- Ukljucuje js za animacije -->
+    <script src="assets/js/bs-init.js"></script>   <!-- Ukljucuje js za bootstrap -->
+    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script> <!-- Ukljucuje js za animiranu formu za slanje poruke -->
+    <script src="assets/js/new-age.js"></script> <!-- Ukljucuje js za glavni meni -->
     <script src="assets/js/Pricing-Tables-pricing-tables.js"></script>
-    <script src="assets/js/Pricing-Tables-wow.js"></script>
+    <script src="assets/js/Pricing-Tables-wow.js"></script> 
 </body>
 
 </html>

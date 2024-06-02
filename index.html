@@ -1,25 +1,38 @@
+<!--
+    Ovaj HTML kod predstavlja glavni deo veb stranice.
+    Sadrži definiciju HTML dokumenta, uključivanje eksternih stilova i skripti, kao i strukturu veb stranice.
+    Takođe sadrži sekciju sa cenovnikom, koja prikazuje informacije o omiljenim serijama, najvećim vrlinama i fakultetu.
+    Koristi Bootstrap framework za stilizaciju i animacije.
+-->
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en">  <!-- Postavlja bootsrap varijablu za temu celog dokumenta -->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Stefan Topciov</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
+    <title>Home - Stefan Topciov</title> <!-- Naslov stranice -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> <!-- Ukljucuje bootstrap css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap"> <!-- Ukljucuje fontove sa google fontsa -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"> <!-- Ukljucuje font awesome ikonice -->
+    <link rel="stylesheet" href="assets/css/aos.min.css"> <!-- Ukljucuje css za animacije -->
+    <link rel="stylesheet" href="assets/css/animate.min.css"> <!-- Ukljucuje css za animacije -->
+    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css"> <!-- SVE ISTO KAO U galerija.html -->
     <link rel="stylesheet" href="assets/css/Contact-Form-by-Moorcam.css">
     <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Pricing-Tables-pricing-table.css">
     <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
 </head>
 
+<!-- 
+    Ovaj HTML kod predstavlja glavni deo veb stranice.
+    Ima id "page-top" koji se može koristiti za stilizovanje ili manipulaciju JavaScript-om.
+    Atribut data-bs-spy omogućava funkcionalnost scrollspy, koja ističe aktivnu sekciju u navigacionom meniju.
+    Atribut data-bs-target određuje ciljni element za scrollspy, koji je identifikovan id-jem "mainNav".
+    Atribut data-bs-offset postavlja vrednost offset-a za scrollspy, koja je u ovom slučaju 56 piksela.
+-->
 <body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56">
     <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
         <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 53px;">Stefan Topciov</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -33,16 +46,22 @@
         </div>
     </nav>
     <header class="masthead" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);"> <!-- Pozadina -->
-        <section class="pricing-table">
-            <div class="container" data-aos="flip-right" data-aos-duration="1000" style="margin-top: 134px;">
-                <div class="pricing-area text-center">
-                    <div class="row">
-                        <div class="col-sm-4 plan price red wow fadeInDown">
-                            <ul class="list-group">
-                                <li class="list-group-item heading">
+        <!-- 
+            Ovaj kod predstavlja sekciju sa cenovnikom na veb stranici.
+            Sadrži tri kolone, prikazujući informacije o omiljenim serijama, najvećim vrlinama i fakultetu.
+            Svaka kolona ima naslov, listu stavki i dugme za više informacija.
+            Stilizacija je primenjena koristeći Bootstrap i custom CSS klase.
+        -->
+        <section class="pricing-table"> <!-- Sekcija -->
+            <div class="container" data-aos="flip-right" data-aos-duration="1000" style="margin-top: 134px;"> <!-- Margina -->
+                <div class="pricing-area text-center"> <!-- Centriranje -->
+                    <div class="row"> 
+                        <div class="col-sm-4 plan price red wow fadeInDown"> <!-- Prva kolona -->
+                            <ul class="list-group"> <!-- Lista -->
+                                <li class="list-group-item heading"> <!-- Naslov -->
                                     <h1>Moje omiljene serije</h1>
                                 </li>
-                                <li class="list-group-item"><span>"Quantum Shadows"</span></li>
+                                <li class="list-group-item"><span>"Quantum Shadows"</span></li> <!-- Stavke -->
                                 <li class="list-group-item"><span>"The Silent Symphony"</span></li>
                                 <li class="list-group-item"><span>"Urban Legends: Uncovered"</span></li>
                                 <li class="list-group-item"><span>"Eternal Echoes"</span></li>
@@ -50,7 +69,7 @@
                                 <li class="list-group-item plan-action"><a class="btn" href="https://www.imdb.com/">Detaljnije</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-4 plan price green wow fadeInDown">
+                        <div class="col-sm-4 plan price green wow fadeInDown"> <!-- Sve isto kao u prvoj koloni -->
                             <ul class="list-group">
                                 <li class="list-group-item heading">
                                     <h1>Moje najvece vrline</h1>
@@ -63,7 +82,7 @@
                                 <li class="list-group-item plan-action"><a class="btn" href="https://rs.linkedin.com/">linkedin</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-4 plan price yellow wow fadeInDown">
+                        <div class="col-sm-4 plan price yellow wow fadeInDown"> <!-- Sve isto kao u prvoj koloni -->
                             <ul class="list-group">
                                 <li class="list-group-item heading">
                                     <h1>Moj fakultet</h1>
@@ -81,10 +100,10 @@
             </div>
         </section>
     </header>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!-- Ukljucuje bootstrap js -->
+    <script src="assets/js/aos.min.js"></script> <!-- Ukljucuje js za animacije -->
+    <script src="assets/js/bs-init.js"></script> <!-- Ukljucuje js za bootstrap -->
+    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script> <!-- SVE ISTO KAO U galerija.html -->
     <script src="assets/js/new-age.js"></script>
     <script src="assets/js/Pricing-Tables-pricing-tables.js"></script>
     <script src="assets/js/Pricing-Tables-wow.js"></script>

@@ -1,30 +1,64 @@
+<!--
+Ovaj HTML fajl predstavlja stranicu "Galerija" na veb sajtu "Stefan Topciov".
+Prikazuje galeriju sa random slikama koje se prikazuju kao smanjene verzije (thumbnail) i otvaraju u modalnom prozoru.
+Takođe, uključuje različite CSS i JavaScript fajlove za stilizaciju i funkcionalnost stranice.
+-->
+
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en"> <!-- Postavlja bootsrap varijablu za temu celog dokumenta -->
+
+<head>
+    <!-- Odeljak sa meta tagovima i naslovom stranice -->
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);"> <!-- Postavlja pozadinu stranice -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav"> <!-- Navbar -->
+        <!-- Odeljak sa navigacionim menijem -->
+    </nav>
+        
+    <div class="container" style="margin-top: 150px;"> <!-- Generise random slike sa sajta -->
+        <div class="row">
+            <!-- Odeljak sa prikazom slika u galeriji -->
+        </div>
+    </div>
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!-- Ukljucuje bootstrap js -->
+    <script src="assets/js/aos.min.js"></script> <!-- Ukljucuje js za animacije -->
+    <script src="assets/js/bs-init.js"></script> <!-- Ukljucuje js za bootstrap -->
+    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script> <!-- Ukljucuje js za kontakt formu -->
+    <script src="assets/js/new-age.js"></script> <!-- Ukljucuje js za animacije -->
+    <script src="assets/js/Pricing-Tables-pricing-tables.js"></script>  <!-- Ukljucuje js za kontakt formu -->
+    <script src="assets/js/Pricing-Tables-wow.js"></script> <!-- Ukljucuje js za kontakt formu -->
+</body> 
+
+</html>
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en"> <!-- Postavlja bootsrap varijablu za temu celog dokumenta -->
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Stefan Topciov</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap">
+    <title>Home - Stefan Topciov</title> <!-- Naslov stranice -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> <!-- Ukljucuje bootstrap css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap"> <!-- Ukljucuje fontove sa google fontsa -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900&amp;display=swap"> <!-- Ukljucuje fontove sa google fontsa -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli&amp;display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/aos.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-by-Moorcam.css">
-    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Tables-pricing-table.css">
-    <link rel="stylesheet" href="assets/css/Pricing-Tables.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"> <!-- Ukljucuje font awesome ikonice -->
+    <link rel="stylesheet" href="assets/css/aos.min.css"> <!-- Ukljucuje css za animacije -->
+    <link rel="stylesheet" href="assets/css/animate.min.css"> <!-- Ukljucuje css za animacije -->
+    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css"> <!-- Ukljucuje css za kontakt formu -->
+    <link rel="stylesheet" href="assets/css/Contact-Form-by-Moorcam.css"> <!-- Ukljucuje css za kontakt formu -->
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css"> <!-- Ukljucuje css za animacije -->
+    <link rel="stylesheet" href="assets/css/Pricing-Tables-pricing-table.css"> <!-- Ukljucuje css za kontakt formu -->
+    <link rel="stylesheet" href="assets/css/Pricing-Tables.css"> <!-- Ukljucuje css za kontakt formu -->
 </head>
 
-<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav">
-        <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 53px;">Stefan Topciov</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="56" style="background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #7b4397, #dc2430);"> <!-- Postavlja pozadinu stranice -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="mainNav"> <!-- Navbar -->
+        <div class="container"><a class="navbar-brand" href="index.html" style="font-size: 53px;">Stefan Topciov</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler float-end" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button> <!-- Dugme za otvaranje menija -->
+            <div class="collapse navbar-collapse" id="navbarResponsive"> <!-- Meni -->
+                <ul class="navbar-nav ms-auto"> <!-- Lista stavki menija -->
                     <li class="nav-item"><a class="nav-link dugmici" data-bss-hover-animate="jello" href="galerija.html">Galerija</a></li>
                     <li class="nav-item"><a class="nav-link dugmici" data-bss-hover-animate="jello" href="mailto:stopciov@gmail.com">e-mail</a></li>
                     <li class="nav-item"><a class="nav-link dugmici" data-bss-hover-animate="jello" href="kontakt.html">kontakt forma</a></li>
@@ -77,13 +111,13 @@
     
     
     
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/aos.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script>
-    <script src="assets/js/new-age.js"></script>
-    <script src="assets/js/Pricing-Tables-pricing-tables.js"></script>
-    <script src="assets/js/Pricing-Tables-wow.js"></script>
-</body>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script> <!-- Ukljucuje bootstrap js -->
+    <script src="assets/js/aos.min.js"></script> <!-- Ukljucuje js za animacije -->
+    <script src="assets/js/bs-init.js"></script> <!-- Ukljucuje js za bootstrap -->
+    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script> <!-- Ukljucuje js za kontakt formu -->
+    <script src="assets/js/new-age.js"></script> <!-- Ukljucuje js za animacije -->
+    <script src="assets/js/Pricing-Tables-pricing-tables.js"></script>  <!-- Ukljucuje js za kontakt formu -->
+    <script src="assets/js/Pricing-Tables-wow.js"></script> <!-- Ukljucuje js za kontakt formu -->
+</body> 
 
 </html>
